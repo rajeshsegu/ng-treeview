@@ -1,0 +1,14 @@
+{
+    "name": "webStatic",
+    "description": "My Static Web Application",
+    "version": "1.0.0",
+    "private": true,
+    "server": {
+        "host": "localhost",
+        "port": "5050"
+    },
+    "dependencies": {
+        "requirejs": "*",
+        "express": "*"
+    }
+}

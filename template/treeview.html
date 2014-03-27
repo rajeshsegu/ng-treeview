@@ -1,0 +1,11 @@
+<ul>
+    <li>
+        <i ng-class="nodeClass(node)" ng-click="selectNode(node)"></i>
+        <span ng-class="node.selected" ng-click="selectNodeLabel(node)" title="{{node[nodeTitleKey]}}">
+            {{node[nodeLabelKey]}}
+        </span>
+        <div ng-show="showNodeChildren(node)" >
+            <div ng-repeat="node in node[nodeChildrenKey]" ng-include="'template/treeview.html'"></div>
+        </div>
+    </li>
+</ul>

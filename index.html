@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+    
+    <head>
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/treeview.css" />
+        <link rel="stylesheet" type="text/css" href="css/app.css" />
+        
+        <script type="text/javascript" src="js/lib/jquery.js"></script>
+        <script type="text/javascript" src="js/lib/angular.js"></script>
+        <script type="text/javascript" src="js/lib/lodash.js"></script>
+        <script type="text/javascript" src="js/widgets/ngTreeview.js"></script>
+        <script type="text/javascript" src="js/widgets/ngWidgets.js"></script>
+        <script type="text/javascript" src="js/app/app.js"></script>
+    </head>
+    
+    <body ng-controller="TreeViewCtrl">
+        <div class="container">
+            <div class="card">
+                <div ng-treeview tree-model="treeModel" node-id-key="'id'" node-label-key="'name'" node-children-key="'children'" tree-style="{ EXPANDED: 'glyphicon glyphicon-folder-open',COLLAPSED: 'glyphicon glyphicon-folder-close',SELECTED: 'selected',LEAF: 'glyphicon glyphicon-list-alt',LOADING: 'glyphicon glyphicon-refresh',ROOT: 'glyphicon glyphicon-folder-close'}" class="treeview"></div>
+            </div>
+        </div>
+    </body>
+
+</html>
