@@ -1,6 +1,6 @@
 {
-    "name": "webStatic",
-    "description": "My Static Web Application",
+    "name": "ng-treeview",
+    "description": "Angular Treeview Server",
     "version": "1.0.0",
     "private": true,
     "server": {
